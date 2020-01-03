@@ -1,12 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Cinzel:400,700);
-@import url(http://fonts.googleapis.com/css?family=Teko:300,400,500,600);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700italic,700);
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400, 700);
+@import url(http://fonts.googleapis.com/css?family=Teko:300, 400, 500, 600);
+@import url(
+    http://fonts.googleapis.com/css?family=Roboto+Condensed:400,
+    300,
+    300italic,
+    400italic,
+    700italic,
+    700
+);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
 @heading-font: Cinzel, serif;
 //@subheading-font: ;
-@body-font: "Roboto Condensed", serif;
-@action-font: "Teko", sans-serif;
+@body-font: 'Roboto Condensed', serif;
+@action-font: 'Teko', sans-serif;
 @auxiliary-font: Abel, serif;
 
 @color-dark: #101010;
@@ -21,7 +28,12 @@ body {
     color: @color-light;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: @heading-font;
     font-weight: 400;
 }
@@ -31,14 +43,14 @@ h2 {
     padding-bottom: 5px;
 }
 
-p, li {
+p,
+li {
     font-family: @body-font;
     font-size: 1.6rem;
     font-weight: 300;
 }
 
 p {
-
     &:first-of-type {
         margin-top: 20px;
     }
@@ -65,9 +77,10 @@ button {
     font-size: 2.4rem;
     padding: 5px 30px;
     text-transform: uppercase;
-    transition: background-color .5s, color .5s;
+    transition: background-color 0.5s, color 0.5s;
 
-    &:hover, &.btn-selected {
+    &:hover,
+    &.btn-selected {
         background-color: @color-light;
         color: black;
         text-decoration: underline;
@@ -88,24 +101,28 @@ button {
         }
     }
 
-    &.close, &.close:hover {
+    &.close,
+    &.close:hover {
         background-color: @color-light;
         margin: 0 !important;
-        opacity: 1.0;
+        opacity: 1;
     }
 }
 
 fieldset {
     margin-bottom: 10px;
 
-    input, label, textarea {
+    input,
+    label,
+    textarea {
         font-family: @body-font;
         font-size: 1.6rem;
         font-weight: 100;
         width: 100%;
     }
 
-    input, textarea {
+    input,
+    textarea {
         border: 1px solid @color-dark;
         padding: 5px;
     }
@@ -123,14 +140,12 @@ fieldset {
 /*********************/
 
 nav {
-
     &.social-media-icons-container {
         border-top: 1px @color-dark solid;
         margin-top: 20px;
         padding-top: 10px;
 
         a {
-
             &.social-media-icon {
                 background-color: transparent;
                 background-image: url('../images/be-social-icons.png');
@@ -183,7 +198,7 @@ nav {
 
     li {
         border-bottom: 1px @color-dark solid;
-        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:last-of-type {
             border-bottom: none;
@@ -207,7 +222,7 @@ nav {
     background: url('../images/background-blur.jpg') center top no-repeat;
     background-size: cover;
     height: 600px;
-    transition: height .6s ease-in-out;
+    transition: height 0.6s ease-in-out;
 
     &.about-us-adjustment {
         height: 300px;
@@ -233,12 +248,12 @@ nav {
 }
 
 #logo-trademark-container {
-    background-color: rgba(0, 0, 0, .75);
-    border: 10px rgba(255, 255, 255, .1) solid;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 10px rgba(255, 255, 255, 0.1) solid;
     display: inline-block;
     margin: 175px 20px 0;
     padding: 25px;
-    transition: margin .6s ease-in-out;
+    transition: margin 0.6s ease-in-out;
 
     img {
         max-width: 400px;
@@ -247,7 +262,6 @@ nav {
 }
 
 #who-we-are-container {
-
     iframe {
         border: 10px @color-light solid;
         height: 40vw;
@@ -298,6 +312,10 @@ nav {
         border: 10px @color-dark solid;
         margin-bottom: 10px;
     }
+
+    // #flappers:hover {
+    //     content: url('images/flapperscolor.jpg');
+    // }
 }
 
 #costumes-container {
@@ -322,7 +340,6 @@ nav {
 }
 
 footer {
-
     &.main-footer {
         background-color: @color-light;
         color: black;
@@ -368,7 +385,8 @@ footer {
     color: @color-dark;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
     border: none;
 }
 
@@ -380,7 +398,8 @@ footer {
         padding: 20px 10px 10px;
         text-align: center; // TEMP
 
-        h1, h2 {
+        h1,
+        h2 {
             border-bottom: 0;
             margin: 0;
         }
@@ -415,13 +434,13 @@ footer {
 }
 
 .modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform .0s ease-out;
-    -o-transition: -o-transform .0s ease-out;
-    transition: transform .0s ease-out;
+    -webkit-transition: -webkit-transform 0s ease-out;
+    -o-transition: -o-transform 0s ease-out;
+    transition: transform 0s ease-out;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
-    transform: translate(0, 0)
+    transform: translate(0, 0);
 }
 
 .modal.in .modal-dialog {
@@ -432,9 +451,7 @@ footer {
 }
 
 .carousel-fade {
-
     .carousel-inner {
-
         .item {
             opacity: 0;
             transition-property: opacity;
@@ -444,13 +461,15 @@ footer {
             opacity: 1;
         }
 
-        .active.left, .active.right {
+        .active.left,
+        .active.right {
             left: 0;
             opacity: 0;
             z-index: 1;
         }
 
-        .next.left, .prev.right {
+        .next.left,
+        .prev.right {
             opacity: 1;
         }
     }
@@ -458,7 +477,8 @@ footer {
     .carousel-control {
         z-index: 2;
 
-        &.left, &.right {
+        &.left,
+        &.right {
             background: none;
         }
     }
