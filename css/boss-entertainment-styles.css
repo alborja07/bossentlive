@@ -169,32 +169,6 @@ nav.social-media-icons-container {
   margin-top: 20px;
   padding-top: 10px;
 }
-nav.social-media-icons-container a.social-media-icon {
-  background-color: transparent;
-  background-image: url('../images/be-social-icons.png');
-  background-size: 144px 96px;
-  display: inline-block;
-  height: 48px;
-  width: 48px;
-}
-nav.social-media-icons-container a.social-media-icon-facebook {
-  background-position: -48px -48px;
-}
-nav.social-media-icons-container a.social-media-icon-facebook:hover {
-  background-position: -48px 0;
-}
-nav.social-media-icons-container a.social-media-icon-instagram {
-  background-position: 0 -48px;
-}
-nav.social-media-icons-container a.social-media-icon-instagram:hover {
-  background-position: 0 0;
-}
-nav.social-media-icons-container a.social-media-icon-twitter {
-  background-position: -96px -48px;
-}
-nav.social-media-icons-container a.social-media-icon-twitter:hover {
-  background-position: -96px 0;
-}
 .slim-nav-container {
   background-color: #101010;
 }
@@ -401,6 +375,15 @@ footer.main-footer .social-media-icons-container a {
   font-family: 'Roboto Condensed', serif;
   font-size: 2.2rem;
   padding: 10px;
+}
+.modal-body.modal-body-temp a .social-media-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal-body.modal-body-temp a .social-media-icons-container a {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .modal-footer {
   padding-top: 0;
