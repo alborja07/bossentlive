@@ -1,33 +1,22 @@
-@import url(http://fonts.googleapis.com/css?family=Cinzel:400, 700);
-@import url(http://fonts.googleapis.com/css?family=Teko:300, 400, 500, 600);
-@import url(
-    http://fonts.googleapis.com/css?family=Roboto+Condensed:400,
-    300,
-    300italic,
-    400italic,
-    700italic,
-    700
-);
-@import url(http://fonts.googleapis.com/css?family=Abel);
-
+@import url('http://fonts.googleapis.com/css?family=Cinzel:400, 700');
+@import url('http://fonts.googleapis.com/css?family=Teko:300, 400, 500, 600');
+@import url('http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700italic,700');
+@import url('http://fonts.googleapis.com/css?family=Abel');
 @heading-font: Cinzel, serif;
 //@subheading-font: ;
 @body-font: 'Roboto Condensed', serif;
 @action-font: 'Teko', sans-serif;
 @auxiliary-font: Abel, serif;
-
 @color-dark: #101010;
 @color-light: #ffffff;
-
 /**************************/
+
 /***** GENERAL STYLES *****/
 /**************************/
-
 body {
     background-color: @color-dark;
     color: @color-light;
 }
-
 h1,
 h2,
 h3,
@@ -37,7 +26,6 @@ h6 {
     font-family: @heading-font;
     font-weight: 400;
 }
-
 h2 {
     border-bottom: 1px @color-dark solid;
     padding-bottom: 5px;
@@ -49,34 +37,29 @@ li {
     font-size: 1.6rem;
     font-weight: 300;
 }
-
 p {
     &:first-of-type {
         margin-top: 20px;
     }
 }
-
 a {
     color: @color-light;
     &:hover {
         text-decoration: none;
         color: @color-light;
+        text-shadow: 2px 2px 8px black;
     }
 }
-
 ul {
     list-style-type: none;
     padding: 0;
-
     li {
         padding: 20px;
     }
 }
-
 img {
     max-width: 100%;
 }
-
 button {
     background-color: @color-dark;
     border: none;
@@ -86,14 +69,12 @@ button {
     padding: 5px 30px;
     text-transform: uppercase;
     transition: background-color 0.5s, color 0.5s;
-
     &:hover,
     &.btn-selected {
         background-color: @color-light;
         color: black;
         text-decoration: underline;
     }
-
     &.reverse {
         background-color: @color-light;
         color: @color-dark;
@@ -102,13 +83,11 @@ button {
     &.reverse-selected {
         background-color: @color-dark;
         color: @color-light;
-
         &:hover {
             background-color: @color-dark;
             color: @color-light;
         }
     }
-
     &.close,
     &.close:hover {
         background-color: @color-light;
@@ -116,10 +95,8 @@ button {
         opacity: 1;
     }
 }
-
 fieldset {
     margin-bottom: 10px;
-
     input,
     label,
     textarea {
@@ -128,13 +105,11 @@ fieldset {
         font-weight: 100;
         width: 100%;
     }
-
     input,
     textarea {
         border: 1px solid @color-dark;
         padding: 5px;
     }
-
     label {
         font-size: 1.2rem;
         font-weight: 400;
@@ -142,17 +117,14 @@ fieldset {
         text-transform: uppercase;
     }
 }
-
 /*********************/
 /***** LOCATIONS *****/
 /*********************/
-
 nav {
     &.social-media-icons-container {
         border-top: 1px @color-dark solid;
         margin-top: 20px;
         padding-top: 10px;
-
         a {
             &.social-media-icon {
                 background-color: transparent;
@@ -162,26 +134,20 @@ nav {
                 height: 48px;
                 width: 48px;
             }
-
             &.social-media-icon-facebook {
                 background-position: -48px -48px;
-
                 &:hover {
                     background-position: -48px 0;
                 }
             }
-
             &.social-media-icon-instagram {
                 background-position: 0 -48px;
-
                 &:hover {
                     background-position: 0 0;
                 }
             }
-
             &.social-media-icon-twitter {
                 background-position: -96px -48px;
-
                 &:hover {
                     background-position: -96px 0;
                 }
@@ -189,20 +155,16 @@ nav {
         }
     }
 }
-
 .slim-nav-container {
     background-color: @color-dark;
 }
-
 #about-us-container {
     background-color: @color-light;
     color: @color-dark;
     display: none;
-
     a {
         color: @color-dark;
     }
-
     .servicesLinks {
         align-items: center;
         display: flex;
@@ -213,17 +175,14 @@ nav {
         display: flex;
         // width: 30%;
         justify-content: center;
-
         a {
             color: @color-dark;
             margin: 20px;
         }
     }
-
     header {
         margin-top: 35px;
     }
-
     .social-media-icons-container {
         border-top: none;
         margin: 0 auto;
@@ -231,31 +190,25 @@ nav {
         padding-top: 0;
     }
 }
-
 #main-header-container {
     background: url('../images/background-blur.jpg') center top no-repeat;
     background-size: cover;
     height: 600px;
     transition: height 0.6s ease-in-out;
-
     &.about-us-adjustment {
         height: 300px;
-
         #logo-trademark-container {
             margin: 50px 20px 0;
         }
     }
-
     @media (max-width: 768px) {
         background-position: center 0;
-
         &.about-us-adjustment {
             background-position: right -75px;
             margin-bottom: -75px;
         }
     }
 }
-
 #main-header {
     color: @color-light;
     text-align: center;
@@ -268,13 +221,11 @@ nav {
     margin: 175px 20px 0;
     padding: 25px;
     transition: margin 0.6s ease-in-out;
-
     img {
         max-width: 400px;
         width: 100%;
     }
 }
-
 #who-we-are-container {
     background-color: @color-light;
     iframe {
@@ -285,31 +236,33 @@ nav {
         max-width: 100%;
         width: 71vw;
     }
-
     p {
         font-size: 2.2rem;
         margin: 25px auto;
+
         text-align: left;
         text-shadow: 0 2px 2px @color-dark;
     }
 }
-
 #services-container {
     color: @color-light;
     padding: 50px 0;
     text-align: center;
-
     h1 {
         border-bottom: 1px @color-dark solid;
         margin-bottom: 10px;
         padding-bottom: 10px;
     }
-
     h3 {
         margin-top: 10px;
         text-decoration: none;
     }
 
+    a {
+        &:hover {
+            text-shadow: 2px 2px 8px @color-light;
+        }
+    }
     .gallery-listing {
         margin-bottom: 25px;
         margin-top: 25px;
@@ -320,17 +273,14 @@ nav {
         margin-bottom: 10px;
     }
 }
-
 #costumes-container {
     margin: 50px 0;
     text-align: center;
-
     h1 {
         border-bottom: 1px @color-light solid;
         margin-bottom: 50px;
         padding-bottom: 10px;
     }
-
     img {
         border: 10px @color-light solid;
         width: 100%;
@@ -341,18 +291,15 @@ nav {
         max-width: 1024px;
     }
 }
-
 footer {
     &.main-footer {
         background-color: @color-light;
         color: black;
-
         p {
             font-family: @action-font;
             font-size: 2.8rem;
             line-height: 2.8rem;
             margin-bottom: 5px;
-
             &.sub-text {
                 font-family: @body-font;
                 font-size: 1.3rem;
@@ -360,12 +307,10 @@ footer {
                 margin-bottom: 25px;
             }
         }
-
         .social-media-icons-container {
             border-top: none;
             margin-top: 30px;
             padding-top: 0;
-
             a {
                 color: @color-dark;
                 margin: 10px;
@@ -373,26 +318,22 @@ footer {
         }
     }
 }
-
 /*******************/
 /***** CLASSES *****/
 /*******************/
-
 .auxiliary-content {
     font-family: @auxiliary-font;
     font-size: 1.6rem;
+
     text-transform: uppercase;
 }
-
 /****************************************/
 /***** jQuery / Bootstrap Overrides *****/
 /****************************************/
-
 .modal-content {
     border-radius: 0;
     color: @color-dark;
 }
-
 .modal-header,
 .modal-footer {
     border: none;
@@ -401,23 +342,19 @@ footer {
 .modal-body {
     overflow: auto;
     padding-bottom: 0;
-
     &.modal-body-temp {
         padding: 20px 10px 10px;
         text-align: center; // TEMP
-
         h1,
         h2 {
             border-bottom: 0;
             margin: 0;
         }
-
         h1 {
             font-family: @action-font;
             font-size: 6rem;
             text-transform: uppercase;
         }
-
         h2 {
             border-top: 1px black solid;
             font-family: @auxiliary-font;
@@ -425,7 +362,6 @@ footer {
             padding: 10px;
             margin-bottom: 5px;
         }
-
         a {
             background: @color-dark;
             color: @color-light;
@@ -436,11 +372,9 @@ footer {
         }
     }
 }
-
 .modal-footer {
     padding-top: 0;
 }
-
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform 0s ease-out;
     -o-transition: -o-transform 0s ease-out;
@@ -450,41 +384,34 @@ footer {
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
-
 .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
-
 .carousel-fade {
     .carousel-inner {
         .item {
             opacity: 0;
             transition-property: opacity;
         }
-
         .active {
             opacity: 1;
         }
-
         .active.left,
         .active.right {
             left: 0;
             opacity: 0;
             z-index: 1;
         }
-
         .next.left,
         .prev.right {
             opacity: 1;
         }
     }
-
     .carousel-control {
         z-index: 2;
-
         &.left,
         &.right {
             background: none;
