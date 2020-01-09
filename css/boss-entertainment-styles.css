@@ -376,14 +376,17 @@ footer.main-footer .social-media-icons-container a {
   font-size: 2.2rem;
   padding: 10px;
 }
-.modal-body.modal-body-temp a .social-media-icons-container {
+.modal-body.modal-body-temp .social-media-icons-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  background-color: #101010;
 }
-.modal-body.modal-body-temp a .social-media-icons-container a {
-  width: 30px;
-  display: flex;
-  flex-wrap: wrap;
+.modal-body.modal-body-temp .social-media-icons-container a {
+  width: 10%;
+}
+.modal-body.modal-body-temp .social-media-icons-container a:hover {
+  text-shadow: 2px 2px 8px #ffffff;
 }
 .modal-footer {
   padding-top: 0;
