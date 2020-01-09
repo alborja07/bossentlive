@@ -57,6 +57,13 @@ li {
 p:first-of-type {
   margin-top: 20px;
 }
+a {
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -164,21 +171,26 @@ nav.social-media-icons-container a.social-media-icon-twitter:hover {
   background-color: #ffffff;
   color: #101010;
   display: none;
-  padding: 5px 0 15px;
+}
+#about-us-container a {
+  color: #101010;
+}
+#about-us-container .servicesLinks {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#about-us-container .socialMedia {
+  display: flex;
+  justify-content: center;
+}
+#about-us-container .socialMedia a {
+  color: #101010;
+  margin: 20px;
 }
 #about-us-container header {
   margin-top: 35px;
-}
-#about-us-container li {
-  border-bottom: 1px #101010 solid;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-#about-us-container li:last-of-type {
-  border-bottom: none;
-}
-#about-us-container li:hover {
-  background-color: #101010;
-  color: #ffffff;
 }
 #about-us-container .social-media-icons-container {
   border-top: none;
@@ -223,8 +235,11 @@ nav.social-media-icons-container a.social-media-icon-twitter:hover {
   max-width: 400px;
   width: 100%;
 }
+#who-we-are-container {
+  background-color: #ffffff;
+}
 #who-we-are-container iframe {
-  border: 10px #ffffff solid;
+  border: 10px #101010 solid;
   height: 40vw;
   margin: 10px auto 30px;
   max-height: 531px;
@@ -237,33 +252,26 @@ nav.social-media-icons-container a.social-media-icon-twitter:hover {
   text-align: left;
   text-shadow: 0 2px 2px #101010;
 }
-#who-we-are-container .social-media-icons-container {
-  background-color: #ffffff;
-  border: none;
-  margin: 0 auto;
-  max-width: 175px;
-  padding: 10px 10px 0;
-}
-#talent-container {
-  background-color: #ffffff;
-  color: #101010;
+#services-container {
+  color: #ffffff;
   padding: 50px 0;
   text-align: center;
 }
-#talent-container h1 {
+#services-container h1 {
   border-bottom: 1px #101010 solid;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-#talent-container h3 {
+#services-container h3 {
   margin-top: 10px;
+  text-decoration: none;
 }
-#talent-container .gallery-listing {
+#services-container .gallery-listing {
   margin-bottom: 25px;
   margin-top: 25px;
 }
-#talent-container img {
-  border: 10px #101010 solid;
+#services-container img {
+  border: 10px #ffffff solid;
   margin-bottom: 10px;
 }
 #costumes-container {
@@ -303,6 +311,10 @@ footer.main-footer .social-media-icons-container {
   border-top: none;
   margin-top: 30px;
   padding-top: 0;
+}
+footer.main-footer .social-media-icons-container a {
+  color: #101010;
+  margin: 10px;
 }
 /*******************/
 /***** CLASSES *****/

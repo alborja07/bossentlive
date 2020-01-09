@@ -56,6 +56,14 @@ p {
     }
 }
 
+a {
+    color: @color-light;
+    &:hover {
+        text-decoration: none;
+        color: @color-light;
+    }
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -190,24 +198,30 @@ nav {
     background-color: @color-light;
     color: @color-dark;
     display: none;
-    padding: 5px 0 15px;
+
+    a {
+        color: @color-dark;
+    }
+
+    .servicesLinks {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .socialMedia {
+        display: flex;
+        // width: 30%;
+        justify-content: center;
+
+        a {
+            color: @color-dark;
+            margin: 20px;
+        }
+    }
 
     header {
         margin-top: 35px;
-    }
-
-    li {
-        border-bottom: 1px @color-dark solid;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-
-        &:last-of-type {
-            border-bottom: none;
-        }
-
-        &:hover {
-            background-color: @color-dark;
-            color: @color-light;
-        }
     }
 
     .social-media-icons-container {
@@ -262,8 +276,9 @@ nav {
 }
 
 #who-we-are-container {
+    background-color: @color-light;
     iframe {
-        border: 10px @color-light solid;
+        border: 10px @color-dark solid;
         height: 40vw;
         margin: 10px auto 30px;
         max-height: 531px;
@@ -277,19 +292,10 @@ nav {
         text-align: left;
         text-shadow: 0 2px 2px @color-dark;
     }
-
-    .social-media-icons-container {
-        background-color: @color-light;
-        border: none;
-        margin: 0 auto;
-        max-width: 175px;
-        padding: 10px 10px 0;
-    }
 }
 
-#talent-container {
-    background-color: @color-light;
-    color: @color-dark;
+#services-container {
+    color: @color-light;
     padding: 50px 0;
     text-align: center;
 
@@ -301,6 +307,7 @@ nav {
 
     h3 {
         margin-top: 10px;
+        text-decoration: none;
     }
 
     .gallery-listing {
@@ -309,13 +316,9 @@ nav {
     }
 
     img {
-        border: 10px @color-dark solid;
+        border: 10px @color-light solid;
         margin-bottom: 10px;
     }
-
-    // #flappers:hover {
-    //     content: url('images/flapperscolor.jpg');
-    // }
 }
 
 #costumes-container {
@@ -362,6 +365,11 @@ footer {
             border-top: none;
             margin-top: 30px;
             padding-top: 0;
+
+            a {
+                color: @color-dark;
+                margin: 10px;
+            }
         }
     }
 }
