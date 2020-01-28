@@ -180,12 +180,6 @@ nav.social-media-icons-container {
 #about-us-container a {
   color: #101010;
 }
-#about-us-container .servicesLinks {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 #about-us-container .socialMedia {
   display: flex;
   justify-content: center;
